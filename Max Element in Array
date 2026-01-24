@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to 
+n = int(input())
+arr = list(map(int,input().split()))
+if n==0:
+    print("Array is empty")
+else:
+    max_ele = arr[0]
+    for i in range(1,n):
+        if arr[i] > max_ele:
+            max_ele = arr[i]
+    print(max_ele)
