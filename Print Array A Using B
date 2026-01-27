@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n = int(input())
+arr = list(map(int, input().split()))
+m = int(input())
+arr1 = list(map(int, input().split()))
+result = []
+for i in arr1:
+    if 0 <= i < n:
+        result.append(str(arr[i]))
+    else:
+        result.append("-1")
+print(" ".join(result))
